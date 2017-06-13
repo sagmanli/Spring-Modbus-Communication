@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<device>
+	<name>VES-9999</name>
+	<type>PROCESS_CONTROLLER</type>
+	<properties>
+		<property>
+			<type>PROCESS_SV</type>
+			<address>10006</address>
+			<addressType>INPUT_REGISTER</addressType>
+			<minValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+			<maxValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+		</property>
+		<property>
+			<type>XXX</type>
+			<address>40001</address>
+			<addressType>HOLDING_REGISTER</addressType>
+			<minValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+			<maxValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+		</property>
+	</properties>
+	<connectionType>
+		<type>MODBUS_TCP_IP</type>
+	</connectionType>
+</device>

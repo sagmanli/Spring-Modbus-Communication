@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<userList>
+	<user>
+		<username>test</username>
+		<password>cnG6LxLuVMg=</password><!-- şifre: "test" --><!-- ROL_ADMIN -->
+	</user>
+	<user>
+		<username>regular</username>
+		<password>Y87TN1udWRQ=</password><!-- şifre: "123456" --><!-- ROL_VERIFIED -->
+	</user>
+	<user>
+		<username>xxx</username>
+		<password>aFkpMIVr4CE=</password><!-- şifre: "123456" --><!-- ROL_VERIFIED -->
+	</user>
+</userList>

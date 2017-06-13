@@ -1,0 +1,7 @@
+<root>
+  <facet id="jpt.jaxb">
+    <node name="classgen">
+      <attribute name="package" value="com.ves.main.integration.jaxb.device"/>
+    </node>
+  </facet>
+</root>

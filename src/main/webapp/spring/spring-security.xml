@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security" xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/security
+						http://www.springframework.org/schema/security/spring-security.xsd">
+
+	<global-method-security pre-post-annotations="enabled" />
+
+	<http auto-config="true" use-expressions="true">
+		<intercept-url access="hasRole('ROLE_ADMIN')" pattern="/*" />
+		<intercept-url access="hasRole('ROLE_VERIFIED')" pattern="/regular*" />
+
+		<logout logout-url="/logout" logout-success-url="" delete-cookies="JSESSIONID" />
+		<remember-me />
+		<session-management invalid-session-url="/" session-fixation-protection="newSession">
+			<concurrency-control expired-url="/" max-sessions="2" />
+		</session-management>
+
+		<http-basic />
+	</http>
+
+	<beans:bean id="authenticationProvider" class="com.ves.main.config.ComAuthenticationProvider">
+	</beans:bean>
+	<beans:bean id="passEncoder" class="com.ves.main.config.ComPassEncoder">
+	</beans:bean>
+
+	<authentication-manager>
+		<authentication-provider user-service-ref="authenticationProvider">
+			<password-encoder ref="passEncoder" />
+		</authentication-provider>
+	</authentication-manager>
+</beans:beans>

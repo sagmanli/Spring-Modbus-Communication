@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<connectionType>
+	<type>MODBUS_SERIAL_RTU</type>
+	<pair>
+		<key>COM_PORT</key>
+		<valueType>COMBO</valueType>
+	</pair>
+	<pair>
+		<key>UNIT_ID</key>
+		<valueType>NUMBER</valueType>
+	</pair>
+</connectionType>

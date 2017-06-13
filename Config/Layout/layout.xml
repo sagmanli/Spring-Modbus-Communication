@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<layout>
+    <device>
+        <name>ESM-4450</name>
+        <type>PROCESS_CONTROLLER</type>
+        <properties>
+            <property>
+                <type>PROCESS_VARIABLE</type>
+                <address>30001</address>
+                <addressType>INPUT_REGISTER</addressType>
+                <minValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <maxValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </property>
+            <property>
+                <type>PROCESS_SV</type>
+                <address>40001</address>
+                <addressType>HOLDING_REGISTER</addressType>
+                <minValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <maxValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <pair>
+                    <key></key>
+                    <value>5000</value>
+                </pair>
+            </property>
+            <property>
+                <type>COM_PORT</type>
+                <address></address>
+                <addressType></addressType>
+                <minValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <maxValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <pair>
+                    <key></key>
+                    <value>6</value>
+                </pair>
+            </property>
+            <property>
+                <type>BAUD_RATE</type>
+                <address></address>
+                <addressType></addressType>
+                <minValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <maxValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <pair>
+                    <key>1200</key>
+                    <value>0</value>
+                </pair>
+                <pair>
+                    <key>2400</key>
+                    <value>1</value>
+                </pair>
+                <pair>
+                    <key>4800</key>
+                    <value>2</value>
+                </pair>
+                <pair>
+                    <key>9600</key>
+                    <value>3</value>
+                </pair>
+                <pair>
+                    <key>19200</key>
+                    <value>4</value>
+                </pair>
+            </property>
+            <property>
+                <type>STOP_BITS</type>
+                <address></address>
+                <addressType></addressType>
+                <minValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <maxValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <pair>
+                    <key></key>
+                    <value>1</value>
+                </pair>
+            </property>
+            <property>
+                <type>DATA_BITS</type>
+                <address></address>
+                <addressType></addressType>
+                <minValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <maxValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <pair>
+                    <key></key>
+                    <value>8</value>
+                </pair>
+            </property>
+            <property>
+                <type>PARITY_BITS</type>
+                <address></address>
+                <addressType></addressType>
+                <minValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <maxValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <pair>
+                    <key></key>
+                    <value>0</value>
+                </pair>
+            </property>
+            <property>
+                <type>ENCODING</type>
+                <address></address>
+                <addressType></addressType>
+                <minValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <maxValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <pair>
+                    <key></key>
+                    <value>rtu</value>
+                </pair>
+            </property>
+        </properties>
+    </device>
+    <device>
+        <name>ESM-4450</name>
+        <type>PROCESS_CONTROLLER</type>
+        <properties>
+            <property>
+                <type>PROCESS_VARIABLE</type>
+                <address>30001</address>
+                <addressType>INPUT_REGISTER</addressType>
+                <minValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <maxValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </property>
+            <property>
+                <type>PROCESS_SV</type>
+                <address>40001</address>
+                <addressType>HOLDING_REGISTER</addressType>
+                <minValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <maxValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <pair>
+                    <key></key>
+                    <value>5000</value>
+                </pair>
+            </property>
+            <property>
+                <type>COM_PORT</type>
+                <address></address>
+                <addressType></addressType>
+                <minValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <maxValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <pair>
+                    <key></key>
+                    <value>6</value>
+                </pair>
+            </property>
+            <property>
+                <type>BAUD_RATE</type>
+                <address></address>
+                <addressType></addressType>
+                <minValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <maxValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <pair>
+                    <key>1200</key>
+                    <value>0</value>
+                </pair>
+                <pair>
+                    <key>2400</key>
+                    <value>1</value>
+                </pair>
+                <pair>
+                    <key>4800</key>
+                    <value>2</value>
+                </pair>
+                <pair>
+                    <key>9600</key>
+                    <value>3</value>
+                </pair>
+                <pair>
+                    <key>19200</key>
+                    <value>4</value>
+                </pair>
+            </property>
+            <property>
+                <type>STOP_BITS</type>
+                <address></address>
+                <addressType></addressType>
+                <minValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <maxValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <pair>
+                    <key></key>
+                    <value>1</value>
+                </pair>
+            </property>
+            <property>
+                <type>DATA_BITS</type>
+                <address></address>
+                <addressType></addressType>
+                <minValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <maxValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <pair>
+                    <key></key>
+                    <value>8</value>
+                </pair>
+            </property>
+            <property>
+                <type>PARITY_BITS</type>
+                <address></address>
+                <addressType></addressType>
+                <minValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <maxValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <pair>
+                    <key></key>
+                    <value>0</value>
+                </pair>
+            </property>
+            <property>
+                <type>ENCODING</type>
+                <address></address>
+                <addressType></addressType>
+                <minValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <maxValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <pair>
+                    <key></key>
+                    <value>rtu</value>
+                </pair>
+            </property>
+        </properties>
+    </device>
+</layout>

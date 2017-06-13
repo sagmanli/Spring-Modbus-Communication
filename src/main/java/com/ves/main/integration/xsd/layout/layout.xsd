@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified">
+	<xs:element name="layout">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" ref="device" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="device">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="name" />
+				<xs:element ref="type" />
+				<xs:element name="properties" type="properties" />
+				<xs:element ref="connectionType" />
+				<!-- <xs:element name="connectionProperties" type="properties" /> -->
+			</xs:sequence>
+			<xs:attribute ref="id" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="connectionType">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="type" />
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="pair" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:attribute name="id" type="xs:NCName" />
+	<xs:element name="name" type="xs:NCName" />
+	<xs:complexType name="properties">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" ref="property" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="property">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="category" />
+				<xs:element ref="type" />
+				<xs:element ref="address" />
+				<xs:element ref="addressType" />
+				<xs:element ref="minValue" />
+				<xs:element ref="maxValue" />
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="pair" />
+			</xs:sequence>
+			<xs:attribute ref="selectedKey" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="pair">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="valueType" />
+				<xs:element ref="key" />
+				<xs:element ref="value" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:attribute name="selectedKey" type="xs:NCName" />
+	<xs:element name="type" type="xs:NCName" />
+	<xs:element name="category" type="xs:NCName" />
+	<xs:element name="address" type="xs:NCName" />
+	<xs:element name="addressType" type="xs:NCName" />
+	<xs:element name="valueType" type="valueType" default="STRING" />
+	<xs:element name="key" type="xs:NCName" />
+	<xs:element name="value" type="xs:NCName" />
+	<xs:element name="minValue" type="xs:long" nillable="true" />
+	<xs:element name="maxValue" type="xs:long" nillable="true" />
+	<xs:simpleType name="valueType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="NUMBER" />
+			<xs:enumeration value="STRING" />
+			<xs:enumeration value="COMBO" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<layout>
+    <device id="2e93029b">
+        <name>ESM-4450</name>
+        <type>PROCESS_CONTROLLER</type>
+        <properties>
+            <property selectedKey="9600">
+                <category>CONNECTION</category>
+                <type>BAUD_RATE</type>
+                <addressType>HOLDING_REGISTER</addressType>
+                <minValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <maxValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <pair>
+                    <key>1200</key>
+                    <value>0</value>
+                </pair>
+                <pair>
+                    <key>2400</key>
+                    <value>1</value>
+                </pair>
+                <pair>
+                    <key>4800</key>
+                    <value>2</value>
+                </pair>
+                <pair>
+                    <key>9600</key>
+                    <value>3</value>
+                </pair>
+                <pair>
+                    <key>19200</key>
+                    <value>4</value>
+                </pair>
+            </property>
+            <property selectedKey="STOP_BIT_1">
+                <category>CONNECTION</category>
+                <type>STOP_BIT</type>
+                <addressType>HOLDING_REGISTER</addressType>
+                <minValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <maxValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <pair>
+                    <key>STOP_BIT_1</key>
+                    <value>1</value>
+                </pair>
+                <pair>
+                    <key>STOP_BIT_2</key>
+                    <value>2</value>
+                </pair>
+            </property>
+            <property selectedKey="DATA_BITS_8">
+                <category>CONNECTION</category>
+                <type>DATA_BITS</type>
+                <addressType></addressType>
+                <minValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <maxValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <pair>
+                    <key>DATA_BITS_8</key>
+                    <value>8</value>
+                </pair>
+            </property>
+            <property selectedKey="PARITY_NONE">
+                <category>CONNECTION</category>
+                <type>PARITY</type>
+                <addressType>HOLDING_REGISTER</addressType>
+                <minValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <maxValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <pair>
+                    <key>PARITY_NONE</key>
+                    <value>0</value>
+                </pair>
+                <pair>
+                    <key>PARITY_ODD</key>
+                    <value>1</value>
+                </pair>
+                <pair>
+                    <key>PARITY_EVEN</key>
+                    <value>2</value>
+                </pair>
+            </property>
+            <property>
+                <type>TEMPERATURE_METRIC</type>
+                <address>40064</address>
+                <addressType>HOLDING_REGISTER</addressType>
+                <minValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <maxValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <pair>
+                    <key>FAHRENHEIT</key>
+                    <value>1</value>
+                </pair>
+                <pair>
+                    <key>CELSIUS</key>
+                    <value>0</value>
+                </pair>
+            </property>
+            <property>
+                <type>PROCESS_SV</type>
+                <address>40001</address>
+                <addressType>HOLDING_REGISTER</addressType>
+                <minValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <maxValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </property>
+            <property>
+                <type>PROCESS_VALUE</type>
+                <address>30001</address>
+                <addressType>INPUT_REGISTER</addressType>
+                <minValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <maxValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </property>
+            <property>
+                <type>OUT1_RELAY_FUNCTION</type>
+                <address>30016</address>
+                <addressType>INPUT_REGISTER</addressType>
+                <minValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <maxValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <pair>
+                    <key>HEAT</key>
+                    <value>0</value>
+                </pair>
+                <pair>
+                    <key>COOL</key>
+                    <value>1</value>
+                </pair>
+                <pair>
+                    <key>LOGIC_OUT</key>
+                    <value>1</value>
+                </pair>
+            </property>
+        </properties>
+        <connectionType>
+            <type>MODBUS_SERIAL_RTU</type>
+            <pair>
+                <key>COM_PORT</key>
+                <value>COM4</value>
+            </pair>
+            <pair>
+                <key>UNIT_ID</key>
+                <value>5</value>
+            </pair>
+        </connectionType>
+    </device>
+</layout>
